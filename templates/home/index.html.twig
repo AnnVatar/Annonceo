@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+<style>
+</style>
+
+<header>
+    <h1>Bienvenue sur Annonceo</h1>
+    <nav>
+        <a href={{ path("categorie")}}>Catégories</a>
+        <a href={{ path("membre")}}>Membres</a>
+        <a href={{ path("apropos")}}>A propos</a>
+    </nav>
+</header>
+<aside>
+    <button><a href={{ path("inscription")}}>Inscription/Connection</a></button>
+</aside>
+<main>
+    <h2>Nos dernières annonces</h2>
+</main>
+<footer>
+    ANNONCEO</br>
+    300 boulevard de Vaugirard, 75015 Paris FRANCE</br>
+</footer>
+{% endblock %}
